@@ -55,16 +55,6 @@ void stop_() {
   digitalWrite(r2, LOW);
 }
 
-void turn() {
-  // left motor
-  digitalWrite(l1, LOW);
-  digitalWrite(l2, HIGH);
-
-  // right motor
-  digitalWrite(r1, HIGH);
-  digitalWrite(r2, LOW);
-}
-
 void turnRight() {
   // left motor
   digitalWrite(l1, HIGH);
