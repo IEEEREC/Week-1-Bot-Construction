@@ -2,8 +2,8 @@
 // Define outputs to L293D
 const int l1 = 12;
 const int l2 = 13;
-const int r1 = 15;
-const int r2 = 16;
+const int r1 = 14;
+const int r2 = 15;
 
 
 void setup() {
@@ -66,6 +66,16 @@ void turn() {
 }
 
 void turnRight() {
+  // left motor
+  digitalWrite(l1, HIGH);
+  digitalWrite(l2, LOW);
+
+  // right motor
+  digitalWrite(r1, LOW);
+  digitalWrite(r2, HIGH);
+}
+
+void turnLeft() {
   // left motor
   digitalWrite(l1, HIGH);
   digitalWrite(l2, LOW);
